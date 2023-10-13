@@ -1,0 +1,273 @@
+:root {
+	--pink: #f14e95;
+	--bg: #0a0a0a;
+	--shadow:0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+b {
+	color: rgb(0, 0, 0);
+	transition-duration: 0.4s;
+}
+b:hover {
+	background-color: transparent;
+	color: lightskyblue;
+}
+
+body {
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	min-height: 1000px;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(image/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	filter: blur(1px);
+}
+
+.hero {
+	min-height: 115vh;
+	margin-top: 0rem;
+	padding: 15rem;
+	padding-bottom: 5rem;
+	position: relative;
+	
+
+}
+
+.hero h1 {
+	font-family: 'Tilt Neon';
+	font-size: 4rem;
+	text-shadow:0 2px 2px rgb(0 0 0 / 0.5);
+	color: lightskyblue;
+}
+.hero h4{
+	font-size: 1.6rem;
+	text-shadow:0 2px 2px rgb(0 0 0 / 0.5);
+}
+.hero p {
+	font-size: 1.4rem;
+	text-shadow:0 2px 2px rgb(0 0 0 / 0.5);
+}
+.hero a{
+	color: rgb(0, 0, 0);
+	background-color: white;
+	box-shadow: var(--shadow);
+}
+.hero a:hover{
+	background-color: lightskyblue;
+	color: white;
+}
+
+.serv {
+	background-color: lightgrey;
+}
+.serv h1{
+	font-family: 'Tilt Neon';
+}
+.serv span {
+	color: lightskyblue;
+}
+.serv .d-flex {
+	border-radius: 5px;
+}
+
+
+
+
+
+.mynavbar {
+	background-color: rgb(255, 255, 255, 0.3) !important;
+	backdrop-filter: blur(4px) ;
+}
+.mynavbar img {
+	border-radius: 5px;
+	padding: auto;
+	margin-bottom: 5px;
+}
+.mynavbar .offcanvas {
+	height: 100vh;
+}
+.mynavbar .navbar-brand {
+	font-family: 'Tilt Neon';
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+} 
+.mynavbar .offcanvas-title {
+	font-family: 'Bad Script';
+	font-size: 2rem;
+	font-weight: bold;
+}
+.mynavbar .nav-link {
+	text-transform: uppercase;
+	font-family: 'Tilt Neon';
+}
+
+
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+	margin: 10px;
+	
+}
+
+.slide {
+    display: none;
+	background-color: #fff;
+	
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width:300px;
+    height: auto;
+	border-radius: 5px;
+}
+
+.control-button {
+    margin-top: 10px;
+    cursor: pointer;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+	background-color: white;
+	box-shadow: var(--shadow);
+}
+.control-button:hover {
+	transition: 0.4s;
+	background-color: lightskyblue;
+	color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #007BFF;
+}
+
+
+.footer-content {
+    max-width: 500px;
+    margin: -5px auto;
+	align-items: center;
+}
+
+
+
+
+@media (max-width: 1200px) {
+	
+}
+
+/* laptop */
+@media (max-width: 992px){
+	html {
+		font-size: 75%;
+	}
+	.simply-countdown>.simply-section {
+		padding: 70px;
+	}	
+
+	.timeline::before {
+		left: 60px;
+	}
+	.timeline li .timeline-img {
+		left: 15px;
+		margin-left: 45px;
+		top: 16px;
+	}
+	.timeline li .timeline-pnl {
+		width: calc((100% - 200px));
+		float: right;
+	}
+	.timeline li .timeline-pnl::before {
+		border-left-width: 0;
+		border-right-width: 15px;
+		left: -15px;
+		right: auto;
+	}
+	.timeline li .timeline-pnl::after {
+		border-left-width: 0;
+		border-right-width: 14px;
+		left: -13px;
+		right: auto;
+	}
+} 
+
+/* tablet */
+@media (max-width: 768px){
+	html {
+		font-size: 62.5%;
+	}
+	.simply-countdown>.simply-section {
+		padding: 60px;
+		margin: 5px;
+	}
+	.mynavbar .nav-link {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.sticky-top {
+		overflow: hidden;
+	}
+	.timeline li .timeline-img {
+		width: 140px;
+		height: 140px;
+
+	}
+} 
+
+/* laptop */
+@media (max-width: 576px){
+	html {
+		font-size: 60%;
+	}
+	.simply-countdown>.simply-section {
+		padding: 45px;
+		margin: 3px;
+	}
+	.timeline li .timeline-img {
+		width: 80px;
+		height: 80px;
+	}
+	.timeline li .timeline-pnl {
+		width: 65%;
+		transform: translateX(-20px);
+	}
+	.timeline li .timeline-pnl::before {
+		top: 30px;
+	}
+	.timeline li .timeline-pnl::after {
+		top: 31px;
+	}
+} 

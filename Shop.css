@@ -1,0 +1,181 @@
+:root {
+	--primary: #F77D0A;
+    --secondary: #2B2E4A;
+    --light: #ffffff;
+    --dark: #1C1E32;
+	--pink: #f14e95;
+	--bg: #0a0a0a;
+	--shadow:0 2px 2px rgb(0 0 0 / 0.5);
+}
+i{
+	color: #007BFF;
+	
+}
+hr {
+	
+	color: #0a0a0a;
+	
+}
+b {
+	color: rgb(0, 0, 0);
+	transition-duration: 0.4s;
+}
+b:hover {
+	background-color: transparent;
+	color: lightskyblue;
+}
+
+body {
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	min-height: 1000px;
+    background-color: lightgrey;
+    background-size: cover;
+	background-position: center;
+}
+
+
+.myrent h1 {
+	font-family: 'Tilt Neon', cursive;
+	font-size: 3rem;
+	text-shadow:0 2px 2px rgb(0 0 0 / 0.5);
+	color: lightskyblue;
+	font-weight: bold;
+}
+
+.mynavbar {
+	background-color: rgb(255, 255, 255, 0.3) !important;
+	backdrop-filter: blur(4px) ;
+}
+.mynavbar img {
+	border-radius: 5px;
+	padding: auto;
+	margin-bottom: 5px;
+}
+.mynavbar .offcanvas {
+	height: 100vh;
+}
+.mynavbar .navbar-brand {
+	font-family: 'Tilt Neon';
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+} 
+.mynavbar .offcanvas-title {
+	font-family: 'Bad Script';
+	font-size: 2rem;
+	font-weight: bold;
+}
+.mynavbar .nav-link {
+	text-transform: uppercase;
+	font-family: 'Tilt Neon';
+}
+
+
+
+
+.rent-item {
+    padding: 15px;
+	width: 400px;
+	height: auto	;
+    text-align: center;
+    background: var(--light);
+    transition: 0.5s;
+	border-radius: 5px;
+	box-shadow: var(--shadow);
+	
+}
+
+.rent-item img {
+	border-radius: 5px;
+	width: 500px;
+	height: 250px;
+	
+}
+.rent-item:hover,
+.rent-item.active {
+    background: var(--secondary);
+}
+
+.rent-item h4 {
+    transition: .5s;
+}
+
+.rent-item:hover h4,
+.rent-item.active h4 {
+    color: var(--light);
+}
+.service-item {
+    height: 320px;
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover,
+.service-item.active {
+    background: var(--secondary);
+}
+
+.service-item h1,
+.service-item h4 {
+    transition: .5s;
+}
+
+.service-item:hover h1,
+.service-item.active h1 {
+    color: var(--dark) !important;
+}
+
+.service-item:hover h4,
+.service-item.active h4 {
+    color: var(--light);
+}
+
+.categories {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	
+}
+
+.category-item {
+	margin-right: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.category-item.active {
+	font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #007BFF;
+}
+
+p {
+    margin: 0;
+}
+
+.footer-content {
+    max-width: 500px;
+    margin: -5px auto;
+	align-items: center;
+}

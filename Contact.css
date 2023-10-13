@@ -1,0 +1,126 @@
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid white; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: lightskyblue;
+    color: white;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    min-height: 95vh;
+	margin-top: 5rem;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+
+  :root {
+	--pink: #f14e95;
+	--bg: #0a0a0a;
+	--shadow:0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+b {
+	color: rgb(0, 0, 0);
+	transition-duration: 0.4s;
+}
+b:hover {
+	background-color: transparent; /* Green */
+	color: lightskyblue;
+}
+
+body {
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	min-height: 700px;
+    background-image: url(image/banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.mynavbar {
+	background-color: rgb(255, 255, 255, 0.3) !important;
+	backdrop-filter: blur(4px) ;
+}
+.mynavbar .offcanvas {
+	height: 100vh;
+}
+.mynavbar img {
+	border-radius: 5px;
+	padding: auto;
+	margin-bottom: 5px;
+}
+.mynavbar .navbar-brand {
+	font-family: 'Tilt Neon';
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	
+} 
+.mynavbar .offcanvas-title {
+	font-family: 'Bad Script';
+	font-size: 2rem;
+	font-weight: bold;
+}
+.mynavbar .nav-link {
+	text-transform: uppercase;
+	font-family: 'Tilt Neon';
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+	margin-top: 3rem;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #007BFF;
+}
+
+p {
+    margin: 0;
+}
+
+.footer-content {
+    max-width: 500px;
+    margin: -5px auto;
+	align-items: center;
+}
